@@ -40,4 +40,5 @@
           <!-- END BLOCK: category -->
         </div>
       </sidebar>
-      <div class="col">
+      <div class="col flex f-fill f-row">
+        <div class="col">
