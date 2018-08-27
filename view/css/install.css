@@ -1,0 +1,177 @@
+/* Common Standarlize */
+body, html {
+  height: 100%;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+body, table, p, div, span, form, input, textarea, select, pre, button, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans';
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  vertical-align: baseline;
+  outline: none;
+  font-style: inherit;
+  font-weight: inherit;
+  background-size: cover;
+}
+* {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+input, textarea, select {
+	font-size: inherit;
+}
+
+body {
+  background: hsl(205, 10%, 97%);
+  color: hsl(205, 25%, 30%);
+  font-size: 14px;
+}
+
+body > div {
+  min-height: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0.67rem 0;
+  border-bottom: 1px solid hsl(205, 15%, 90%);
+  padding-bottom: 0.3em;
+}
+h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  line-height: 1.25;
+  padding-bottom: 0.3em;
+  font-size: 1.5em;
+  border-bottom: 1px solid hsl(205, 15%, 90%);
+}
+
+input[type='text'], input[type='password'] {
+  position: relative;
+  border: 1px solid #eee;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 13px 0 13px;
+  border-radius: 4px;
+  box-shadow: 0 2px 0 #eee;
+  z-index: 5;
+  color: #999;
+  font-size: 16px;
+  transition: all .2s ease-in;
+}
+
+input[type='submit'] {
+  background: #5e88ab;
+  width: 100%;
+  border: none;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 20px;
+  box-shadow: 0 4px 0 #486c8b;
+  opacity: .8;
+  transition: all .2s ease-in;
+  margin-top: 1rem;
+}
+
+.parameter {
+  color: hsl(205, 5%, 70%);
+  text-transform: uppercase;
+  padding: .5rem 0;
+  font-weight: 300;
+}
+.parameter:first-child {
+  padding-top: 0;
+}
+.parameter ~ div {
+  padding-bottom: .5rem;
+}
+
+.install-panel {
+  background: #fff;
+  border-radius: .5rem;
+  width: 400px;
+  overflow: hidden;
+  box-shadow: 0 2px 2px hsla(205, 10%, 10%, 0.1);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  background: hsl(205, 20%, 50%);
+  padding: 1rem;
+  border-radius: .5rem .5rem 0 0;
+  margin-top: -.5rem;
+  box-shadow: 0 -2px 2px hsla(205, 0%, 0%, .2);
+}
+
+.module-detail {
+  background: hsl(205, 20%, 20%);
+  color: hsl(205, 10%, 50%);
+  padding: .7rem 1.2rem .5rem 1.2rem;
+}
+.module-detail span {
+  border-radius: .3rem .3rem 0 0;
+  background: hsl(205, 20%, 10%);
+  padding: 0 .8rem;
+  line-height: 1.6rem;
+  height: 1.6rem;
+  display: block;
+}
+
+.content {
+  padding: 1rem;
+}
+
+.description {
+  background: hsl(205, 20%, 97%);
+  padding: 1rem;
+}
+.error {
+  line-height: 1.5;
+  color: hsl(12, 30%, 38%);
+  background: hsl(12, 30%, 95%);
+  border-bottom: 1px solid hsl(12, 30%, 90%);
+  border-top: 1px solid hsl(12, 30%, 90%);
+  padding: 1rem;
+}
+.success {
+  font-size: 1.5rem;
+  color: hsl(205, 20%, 70%);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.success i {
+  font-size: 4rem;
+}
+
+a.conitune {
+  display: block;
+  width: 100%;
+  background: hsla(205, 40%, 40%);
+  border: none;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 6px;
+  color: hsla(205, 40%, 95%);
+  font-size: 20px;
+  box-shadow: 0 4px 0 hsla(205, 40%, 20%);
+  opacity: .8;
+  transition: all .2s ease-in;
+  margin-top: 1rem;
+}

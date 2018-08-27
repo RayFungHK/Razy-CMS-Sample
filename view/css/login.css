@@ -1,0 +1,136 @@
+/* Common Standarlize */
+body, html {
+  height: 100%;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+body, table, p, div, span, form, input, textarea, select, pre, button, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans';
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  vertical-align: baseline;
+  outline: none;
+  font-style: inherit;
+  font-weight: inherit;
+  background-size: cover;
+}
+* {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+input, textarea, select {
+	font-size: inherit;
+}
+
+body {
+	background-color: #648695;
+	position: fixed;
+}
+body > div {
+  min-height: 100%;
+	overflow: hidden;
+}
+#background-deco {
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,.05);
+  -ms-transform: skewX(30deg); /* IE 9 */
+  -webkit-transform: skewX(30deg); /* Safari */
+  transform: skewX(30deg); /* Standard syntax */
+	z-index: 1;
+}
+#login-box {
+	position: relative;
+	z-index: 3;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 2px rgba(0,0,0,.2);
+	width: 300px;
+	min-width: 300px;
+	overflow: hidden;
+}
+#login-title {
+	font-size: 20px;
+	text-align: center;
+	height: 60px;
+	line-height: 60px;
+	background: #f5f5f5;
+	color: #aaa;
+}
+.login-form-row {
+	margin: 2em;
+	position: relative;
+}
+.login-form-row > span {
+	position: absolute;
+	left: 14px;
+	top: 0;
+	z-index: 10;
+	font-size: 1.3em;
+	height: 50px;
+	line-height: 50px;
+	color: #bbb;
+}
+.login-form-row input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.login-form-row input[type='text'], .login-form-row input[type='password'] {
+	position: relative;
+	border: 1px solid #eee;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 13px 0 42px;
+	border-radius: 4px;
+	box-shadow: 0 2px 0 #eee;
+	z-index: 5;
+	color: #999;
+	font-size: 16px;
+	transition: all .2s ease-in;
+}
+.login-form-row input[type='text']:focus, .login-form-row input[type='password']:focus {
+	background: #fafafa;
+}
+input[type='submit'] {
+	background: #5e88ab;
+	width: 100%;
+	border: none;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 6px;
+	color: #fff;
+	font-size: 20px;
+	box-shadow: 0 4px 0 #486c8b;
+	opacity: .8;
+	transition: all .2s ease-in;
+}
+input[type='submit']:hover {
+	opacity: 1;
+}
+#login-error {
+	padding: 1em;
+	color: #fff;
+	background: #b46161;
+	box-shadow: inset 0 2px 2px rgba(0,0,0,.1);
+}
+#login-error > span {
+	font-size: 24px;
+	margin-right: 14px;
+}
+#branded-color {
+	height: 10px;
+	background: #C9FFBF;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFAFBD, #C9FFBF);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FFAFBD, #C9FFBF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

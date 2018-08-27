@@ -1,0 +1,1125 @@
+/* Common Standarlize */
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body, table, p, div, span, form, input, textarea, select, pre, button, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans';
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  vertical-align: baseline;
+  outline: none;
+  font-style: inherit;
+  font-weight: inherit;
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+input, textarea, select {
+  font-size: inherit;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: hsl(205, 10%, 97%);
+  color: hsl(205, 25%, 30%);
+  font-size: 14px;
+}
+
+body>div {
+  min-height: 100%;
+}
+
+#split-panel {
+  min-height: 100%;
+}
+
+topbar {
+  display: block;
+  background-color: #1aa6cb;
+  height: 50px;
+  width: 100%;
+}
+
+#site-name {
+  color: hsl(205, 100%, 100%);
+  line-height: 50px;
+  height: 50px;
+  padding: 0 1rem;
+  font-size: 20px;
+  text-align: center;
+  width: 250px;
+  background: rgba(0, 0, 0, .1);
+}
+
+#site-name a {
+  color: hsl(205, 100%, 100%);
+}
+
+#logout-icon {
+  min-width: 50px;
+}
+
+#logout-icon a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-left: 1px solid rgba(0, 0, 0, .1);
+  color: hsl(205, 100%, 100%);
+  font-size: 20px;
+}
+
+#menu-icon {
+  min-width: 50px;
+}
+
+#menu-icon a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+#menu-icon a:before {
+  font-family: fontone;
+  font-size: 20px;
+  content: '\e9ad';
+  color: hsl(0, 10%, 25%);
+}
+
+sidebar {
+  -webkit-transform: translate3d(0, 0, 0);
+  display: block;
+  background: hsl(205, 10%, 25%);
+  width: 250px;
+  min-width: 250px;
+  max-width: 250px;
+}
+
+#menu a {
+  color: hsl(205, 10%, 85%);
+  display: block;
+  padding: .75rem 1rem;
+  border-left: 1rem solid hsl(205, 10%, 23%);
+  transition: all .2s ease-in;
+}
+
+#menu a:hover {
+  color: hsl(205, 10%, 95%);
+  background: hsl(205, 10%, 23%);
+}
+
+#menu .category {
+  color: hsl(205, 10%, 35%);
+  margin: .75rem 1rem;
+  text-transform: uppercase;
+  font-size: 90%;
+  font-weight: bold;
+}
+
+main {
+  display: block;
+  width: 100%;
+}
+
+#user-panel {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#avatar>div {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border: 5px solid rgba(0, 0, 0, .075);
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+#avatar img {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  width: auto;
+}
+
+#user-panel #user-name {
+  color: hsl(205, 100%, 100%);
+  line-height: 35px;
+  text-align: center;
+}
+
+#user-panel #user-name~div {
+  color: hsl(205, 100%, 100%);
+  opacity: .65;
+  text-align: center;
+}
+
+.btn-group .fo-cross {
+  color: hsl(0, 59%, 64%);
+}
+
+/* Section */
+
+section {
+  margin: 2rem 0;
+}
+
+section.gutters {
+  margin: 2rem;
+}
+
+section.navigator {
+  margin-top: 0;
+  background: hsl(205, 100%, 100%);
+  padding: 2rem;
+}
+
+.section-header>div:first-child {
+  font-size: 24px;
+  margin-bottom: .2rem;
+}
+
+.section-header>div:last-child {
+  color: hsl(205, 10%, 66%);
+}
+
+section.header {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 2rem;
+  margin: 2rem 0;
+  color: hsl(205, 10%, 66%);
+}
+
+section.header>span {
+  font-size: 20px;
+}
+
+section.sticky {
+  margin-top: -2rem;
+  background: rgba(0, 0, 0, .05);
+  padding: 3rem;
+}
+
+section.sticky-warning {
+  margin-top: -2rem;
+  background: hsl(0, 59%, 58%);
+  color: hsl(205, 40%, 96%);
+  padding: 1rem;
+}
+
+section.sticky-warning i {
+  margin-right: .5rem;
+  font-size: 2rem;
+}
+
+.sticky-header {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.sticky-desc {
+  margin-top: .5rem;
+  color: hsl(205, 10%, 66%);
+}
+
+.panel {
+  background: hsl(205, 100%, 100%);
+  border: 1px solid hsl(205, 10%, 93%);
+}
+
+div.panel.gutters {
+  padding: 1rem;
+}
+
+section>.panel {
+  border: none;
+  border-top: 1px solid hsl(205, 10%, 93%);
+  border-bottom: 1px solid hsl(205, 10%, 93%);
+}
+
+section.gutters>.panel {
+  border: 1px solid hsl(205, 10%, 93%);
+}
+
+.panel>.gutters {
+  padding: 1rem;
+}
+
+.split {
+  padding: 0 1rem;
+}
+
+.grid-header {
+  padding: 14px;
+  font-size: 18px;
+  background: hsl(205, 100%, 100%);
+  border: 1px solid hsl(205, 10%, 93%);
+  border-bottom: 3px solid #41b1d5;
+}
+
+.grid-header a.tagbutton {
+  border: 1px solid hsl(205, 10%, 92%);
+  font-size: 14px;
+  padding: .5rem .75rem;
+  border-radius: 4px;
+  color: hsl(0, 10%, 25%);
+  transition: all 0.2s ease-in;
+}
+
+.grid-header a.tagbutton:hover {
+  background: hsl(205, 10%, 96%);
+}
+
+.grid-header+.panel {
+  border-top: none;
+}
+
+.grid-header>.btn-group {
+  font-size: 14px;
+}
+
+/* Table */
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  border-left: 1px solid hsl(205, 10%, 93%);
+  border-right: 1px solid hsl(205, 10%, 93%);
+}
+
+table.panel {
+  background: hsl(205, 100%, 100%);
+  border: 1px solid hsl(205, 10%, 93%);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container>table.panel {
+  border-right: none;
+  border-left: none;
+}
+
+section table.panel td, section table.panel th {
+  padding: .6rem 1rem;
+  text-align: left;
+}
+
+section table.panel th, section table.panel td {
+  white-space: nowrap;
+}
+
+section table.panel tr:nth-of-type(even) {
+  background: rgba(0, 0, 0, .03);
+}
+
+section table.panel.formtable tr {
+  background: hsl(205, 100%, 100%);
+}
+
+section table.panel th {
+  background: hsl(0, 10%, 98%);
+  text-transform: uppercase;
+  border-bottom: 1px solid hsl(205, 10%, 92%);
+}
+
+section>table.panel {
+  border: none;
+  border-top: 1px solid hsl(205, 10%, 93%);
+  border-bottom: 1px solid hsl(205, 10%, 93%);
+}
+
+table.panel.bordered {
+  border-right: none;
+  border-bottom: none;
+}
+
+section table.panel.bordered td, section table.panel.bordered th {
+  border-right: 1px solid hsl(205, 10%, 93%);
+  border-bottom: 1px solid hsl(205, 10%, 93%);
+}
+
+table tfoot td {
+  border-top: 1px solid hsl(205, 10%, 92%);
+  background: hsl(205, 100%, 100%);
+  font-style: italic;
+  font-weight: bold;
+}
+
+table tfoot tr:first-child td {
+  border-top: 3px solid hsl(205, 10%, 61%);
+}
+
+table tfoot td.right {
+  text-align: right;
+}
+
+.panel-title {
+  font-weight: 700;
+  padding: 1rem;
+  text-transform: uppercase;
+  background: hsl(205, 10%, 96%);
+  border-bottom: 1px solid hsl(205, 10%, 93%);
+}
+
+.panel.gutters .panel-title {
+  padding: 1rem 0;
+}
+
+table tr.sub td {
+  background: hsl(205, 100%, 100%);
+}
+
+table td.separater {
+  border-right: 1px solid hsl(205, 10%, 93%);
+}
+
+table th.separater {
+  border-right: 1px solid hsl(205, 10%, 92%);
+}
+
+table tr.group-row td {
+  border-bottom: 1px solid hsl(205, 10%, 93%);
+}
+
+table tr.group-row~tr td {
+  border-bottom: 1px solid hsl(205, 10%, 93%);
+}
+
+table td.group-head {
+  background: hsl(205, 10%, 96%);
+}
+
+section table.formtable td {
+  min-height: 49px;
+}
+
+.radio-switcher>input[type='radio'] {
+  display: none;
+}
+
+.radio-switcher>label {
+  cursor: pointer;
+  border-top: 1px solid hsl(205, 10%, 92%);
+  border-left: 1px solid hsl(205, 10%, 92%);
+  border-bottom: 1px solid hsl(205, 10%, 92%);
+  padding: 0 .5rem;
+  color: hsl(205, 10%, 50%);
+  transition: all 0.2s ease-in;
+  white-space: nowrap;
+  line-height: 28px
+}
+
+.radio-switcher>input[type='radio']:checked+label {
+  background: #4090ad;
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, .05);
+  color: hsl(205, 100%, 100%);
+}
+
+.radio-switcher>label:first-of-type {
+  border-radius: 14px 0 0 14px;
+  padding-left: 1rem;
+}
+
+.radio-switcher>label:last-of-type {
+  border-right: 1px solid hsl(205, 10%, 92%);
+  border-radius: 0 14px 14px 0;
+  padding-right: 1rem;
+}
+
+.radio-switcher>label:only-of-type {
+  border-radius: 3px;
+  border: 1px solid hsl(205, 10%, 92%);
+}
+
+.radio-switcher>label:hover {
+  color: hsl(205, 10%, 30%);
+  background: rgba(0, 0, 0, .03);
+}
+
+/* Button */
+
+a.button {
+  border: 1px solid hsl(205, 10%, 92%);
+  padding: .5rem 1rem;
+  color: hsl(205, 10%, 50%);
+  transition: all 0.2s ease-in;
+  white-space: nowrap;
+  border-radius: 3px;
+}
+
+.btn-group>a {
+  border-top: 1px solid hsl(205, 10%, 92%);
+  border-left: 1px solid hsl(205, 10%, 92%);
+  border-bottom: 1px solid hsl(205, 10%, 92%);
+  padding: .5rem 1rem;
+  color: hsl(205, 10%, 50%);
+  transition: all 0.2s ease-in;
+  white-space: nowrap;
+}
+
+.btn-group>a:first-child {
+  border-radius: 3px 0 0 3px;
+}
+
+.btn-group>a:last-child {
+  border-right: 1px solid hsl(205, 10%, 92%);
+  border-radius: 0 3px 3px 0;
+}
+
+.btn-group>a:only-child {
+  border-radius: 3px;
+  border: 1px solid hsl(205, 10%, 92%);
+}
+
+.btn-group.small>a {
+  padding: .3rem .7rem;
+  font-size: 80%;
+}
+
+.btn-group.thin>a {
+  padding: .3rem .5rem;
+}
+
+.btn-group>a:hover, a.button:hover {
+  color: hsl(205, 10%, 30%);
+  background: rgba(0, 0, 0, .03);
+}
+
+.btn-group span {
+  margin-right: .75rem;
+  font-size: 10px;
+  color: hsl(205, 10%, 66%);
+}
+
+.btn-group span.thin {
+  margin-right: .5rem;
+}
+
+.btn-group span.only {
+  margin: 0px;
+}
+
+/* Form Elrement */
+
+input, textarea, select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+.form-group {
+  margin-top: 1rem;
+  padding: 0 1rem 1rem 1rem;
+  line-height: 1.5;
+}
+
+.form-group label span {
+  display: block;
+  color: hsl(205, 15%, 80%);
+}
+
+.form-group:nth-last-child(n+2) {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid hsl(205, 10%, 90%);
+}
+
+.form-group input+span, .icon-textbox+span, .selectbox+span {
+  display: block;
+  color: #b35d5d;
+  margin-top: .3rem;
+}
+
+.form-group input[type='text'], .form-group input[type='password'], .search-panel input[type='text'], .form-group textarea, input.textbox {
+  width: 100%;
+  border: 1px solid hsl(205, 10%, 92%);
+  padding: 0 .75rem;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+  transition: all 0.2s ease-in;
+  background: hsl(205, 100%, 100%);
+  resize: none;
+}
+
+.form-group input[type='text'], .form-group input[type='password'], .search-panel input[type='text'], input.textbox {
+  line-height: 2.5rem;
+}
+
+.form-group textarea {
+  padding: .5rem .75rem;
+  min-height: 6rem;
+}
+
+.icon-textbox {
+  border: 1px solid hsl(205, 10%, 92%);
+  border-radius: 4px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+  background: hsl(205, 100%, 100%);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.icon-textbox .value {
+  padding: 0 .75rem;
+}
+
+.icon-textbox>span, .icon-textbox>a {
+  border-right: 1px solid hsl(205, 10%, 92%);
+  background: hsl(205, 10%, 96%);
+  text-align: center;
+  color: hsl(205, 10%, 80%);
+  line-height: 2.5rem;
+  min-width: 2.5rem;
+}
+
+.icon-textbox>a {
+  color: hsl(205, 10%, 50%);
+}
+
+.icon-textbox>a:hover {
+  background: hsl(205, 10%, 96%);
+}
+
+.icon-textbox>span:last-child, .icon-textbox>a:last-child {
+  border-left: 1px solid hsl(205, 10%, 92%);
+  border-right: none;
+}
+
+.icon-textbox.warning, .selectbox.warning select {
+  border-color: hsl(0, 49%, 61%);
+  box-shadow: none;
+}
+
+.icon-textbox.warning>span {
+  border-color: hsl(0, 49%, 61%);
+}
+
+.icon-textbox input[type='text'], .icon-textbox input[type='password'] {
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+}
+
+.form-group input[type='text'].line, .form-group input[type='password'].line {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid hsl(205, 10%, 92%);
+  padding: .5rem 0;
+  box-shadow: none;
+}
+
+.form-group input[type='text'].line:focus, .form-group input[type='password'].line:focus {
+  background: hsl(205, 100%, 100%);
+  border-bottom: 1px solid hsl(205, 10%, 80%);
+}
+
+.form-group input[type='text']:focus, .form-group input[type='password']:focus, textarea:focus {
+  background: hsl(205, 10%, 97%);
+}
+
+.form-group input[type='text'][disabled], .form-group input[type='password'][disabled], .form-group input[type='text'][readonly], .form-group input[type='password'][readonly], .form-group textarea[disabled], .form-group textarea[readonly] {
+  background: hsl(205, 10%, 96%);
+  cursor: not-allowed;
+  color: hsl(205, 10%, 80%);
+  box-shadow: none;
+}
+
+.form-group input[type='text'][disabled]:focus, .form-group input[type='password'][disabled]:focus, textarea[disabled]:focus {
+  background: hsl(205, 10%, 96%);
+}
+
+.form-group input[type='text'].rounded, .form-group input[type='password'].rounded {
+  border-radius: 999px;
+}
+
+.form-group input[type='text'].warning, .form-group input[type='password'].warning, .form-group textarea.warning, input.textbox.warning {
+  border-color: hsl(0, 49%, 61%);
+  box-shadow: none;
+}
+
+.form-group input[type='text'].success, .form-group input[type='password'].success, .form-group textarea.success, input.textbox.success {
+  border-color: hsl(128, 42%, 52%);
+  box-shadow: none;
+}
+
+.form-group input[type='text'].small, .form-group input[type='password'].small, .icon-textbox.small {
+  width: 60px;
+}
+
+.form-group input[type='text'].medium, .form-group input[type='password'].medium, .icon-textbox.medium {
+  width: 120px;
+}
+
+.form-group input[type='text'].long, .form-group input[type='password'].long, .icon-textbox.long {
+  width: 250px;
+}
+
+.selectbox {
+  position: relative;
+}
+
+.selectbox:after {
+  font-family: fontone;
+  display: block;
+  position: absolute;
+  z-index: 2;
+  right: .75rem;
+  top: 1px;
+  line-height: 2.5rem;
+  height: 2.5rem;
+  content: "\e925";
+  color: hsl(205, 10%, 80%);
+}
+
+.selectbox select {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  border: 1px solid hsl(205, 10%, 92%);
+  border-radius: 4px;
+  background: hsl(205, 100%, 100%);
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, hsl(205, 100%, 100%), hsl(205, 10%, 96%));
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, hsl(205, 100%, 100%), hsl(205, 10%, 96%));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  line-height: 2.5rem;
+  padding: 0 1.75rem 0 .75rem;
+  transition: all .2s ease-in;
+  cursor: pointer;
+}
+
+.selectbox select:hover {
+  background: hsl(205, 10%, 96%);
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, hsl(205, 100%, 100%), hsl(205, 10%, 96%));
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, hsl(205, 100%, 100%), hsl(205, 10%, 96%));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.submit-btn {
+  border-radius: 18px;
+  line-height: 36px;
+  height: 36px;
+  border: none;
+  padding: 0 20px;
+  cursor: pointer;
+  transition: all .1s ease-in;
+  text-align: center;
+  font-weight: 500;
+  background: hsl(205, 60%, 65%);
+  color: hsl(205, 100%, 100%);
+  opacity: .8;
+}
+
+.submit-btn:hover {
+  opacity: 1;
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, .1);
+}
+
+input[type='checkbox'] {
+  display: none;
+  line-height: normal;
+}
+
+input[type='checkbox']+label {
+  position: relative;
+  cursor: pointer;
+  line-height: 20px;
+  padding-left: 27px;
+}
+
+input[type='checkbox']+label:before {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  content: '';
+  border: 1px solid hsl(205, 10%, 92%);
+  border-radius: 4px;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+}
+
+input[type='checkbox'].circle+label:before {
+  border-radius: 50%;
+}
+
+input[type='checkbox'].blue:checked+label:before, input[type='checkbox'].red:checked+label:before, input[type='checkbox'].green:checked+label:before {
+  color: hsl(205, 100%, 100%);
+}
+
+input[type='checkbox'].blue+label:before {
+  border-color: hsl(205, 40%, 40%);
+}
+
+input[type='checkbox'].blue:checked+label:before {
+  background: hsl(205, 40%, 40%);
+}
+
+input[type='checkbox'].red+label:before {
+  border-color: hsl(0, 40%, 40%);
+}
+
+input[type='checkbox'].red:checked+label:before {
+  background: hsl(0, 40%, 40%);
+}
+
+input[type='checkbox'].green+label:before {
+  border-color: hsl(115, 40%, 40%);
+}
+
+input[type='checkbox'].green:checked+label:before {
+  background: hsl(115, 40%, 40%);
+}
+
+input[type='checkbox']:checked+label:before {
+  font-family: fontone;
+  font-size: 8px;
+  content: '\e9c7';
+}
+
+input[type='checkbox'].cross:checked+label:before {
+  font-family: fontone;
+  font-size: 8px;
+  content: '\e9c6';
+}
+
+.checkbox-group {
+  margin-top: -1rem;
+}
+
+.checkbox-group input[type='checkbox']+label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  line-height: 30px;
+  height: 32px;
+  padding: 0 1rem;
+  border: 1px solid hsl(205, 10%, 92%);
+  transition: all 0.2s ease-in;
+  margin: 1rem 1rem 0 0;
+  border-radius: 16px;
+}
+
+.checkbox-group input[type='checkbox']+label:before {
+  display: none;
+}
+
+.checkbox-group input[type='checkbox']:checked+label {
+  background: hsl(205, 32%, 52%);
+  border-color: hsl(205, 32%, 52%);
+  color: hsl(205, 100%, 100%);
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, .05);
+}
+
+.checkbox-group input[type='checkbox']:checked+label:first-of-type {
+  border-color: hsl(205, 32%, 52%);
+}
+.pagination > a:first-child {
+  border-radius: 3px 0 0 3px;
+}
+.pagination > a:last-child {
+  border-radius: 0 3px 3px 0;
+}
+.pagination .paging-button {
+  background: hsl(205, 10%, 98%);
+}
+.pagination>a {
+  padding: .5rem;
+  min-width: 31px;
+  text-align: center;
+  color: hsl(205, 10%, 50%);
+  transition: all 0.2s ease-in;
+  border-top: 1px solid hsl(205, 10%, 92%);
+  border-bottom: 1px solid hsl(205, 10%, 92%);
+  border-left: 1px solid hsl(205, 10%, 92%);
+  background: hsl(205, 100%, 100%);
+}
+
+.pagination>a.current {
+  background: hsl(205, 10%, 96%);
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, .1);
+}
+
+.pagination>a:hover {
+  background: hsl(205, 10%, 96%);
+}
+
+.pagination>a:last-child {
+  border-right: 1px solid hsl(205, 10%, 92%);
+}
+
+.confirm-message {
+  padding: 1rem;
+}
+
+.confirm-message:nth-last-child(n+2) {
+  border-bottom: 1px solid hsl(205, 10%, 93%);
+}
+
+a.confirm-red, a.confirm-red:hover {
+  color: hsl(0, 49%, 61%);
+}
+
+.search-panel {
+  padding: 1rem;
+  border-left: 1px solid hsl(205, 10%, 93%);
+  border-right: 1px solid hsl(205, 10%, 93%);
+}
+
+.search-panel .gutters {
+  padding-left: 1rem;
+}
+
+.search-panel input[type='submit'] {
+  border-radius: 18px;
+  line-height: 35px;
+  height: 35px;
+  border: 1px solid hsl(205, 10%, 92%);
+  padding: 0 1rem;
+  cursor: pointer;
+  text-align: center;
+  background: hsl(205, 100%, 100%);
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, hsl(205, 100%, 100%), hsl(205, 10%, 96%));
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, hsl(205, 100%, 100%), hsl(205, 10%, 96%));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.search-panel input[type='submit']:hover {
+  background: hsl(205, 10%, 96%);
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, hsl(205, 100%, 100%), hsl(205, 10%, 96%));
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, hsl(205, 100%, 100%), hsl(205, 10%, 96%));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.ui-dtpicker {
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid hsl(205, 10%, 92%);
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.ui-dtpicker>* {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.ui-dtpicker>a {
+  font-family: fontone;
+  text-align: center;
+  line-height: 35px;
+  font-size: 14px;
+  color: hsl(205, 10%, 80%);
+  width: 35px;
+  height: 35px;
+  background-size: 14px;
+  background-color: hsl(205, 10%, 97%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-right: 1px solid hsl(205, 10%, 92%);
+}
+
+.ui-dtpicker.date>a:before {
+  content: '\e981';
+}
+
+.ui-dtpicker.time>a:before {
+  content: '\e97f';
+}
+
+.ui-dtpicker~.ui-dtpicker {
+  margin-left: 10px;
+}
+
+.ui-dtpicker>a:hover {
+  background-color: hsl(205, 10%, 96%);
+}
+
+.ui-dtpicker>input[type="text"] {
+  box-shadow: none;
+  height: 35px;
+  width: 40px;
+  border-radius: 0;
+}
+
+.ui-dtpicker>input[type="text"].ui-date-year {
+  width: 53px;
+}
+
+.ui-dtpicker>input[type="text"]:nth-last-child(n+2) {
+  border-right: 1px dotted hsl(205, 10%, 92%);
+}
+
+.ui-dtpicker input[type="text"] {
+  border: none;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 14px;
+  border: none;
+  padding: 5px 8px;
+  background: transparent;
+}
+
+.ui-dtpicker input[type="text"]:focus, .ui-dtpicker input[type="text"]:focus {
+  border: none;
+  color: hsl(205, 75%, 50%);
+  border-right: 1px dotted hsl(205, 10%, 92%);
+}
+
+.ui-dtpicker>input[type="text"]:last-child {
+  border: none;
+}
+
+section table.panel td.waiting-assign {
+  text-align: center;
+  color: #ba5b76
+}
+
+.alertbox {
+  z-index: 300;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .7);
+}
+
+.alertbox>div {
+  background: hsl(205, 100%, 100%);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.alertbox-title {
+  background: hsl(205, 10%, 96%);
+}
+
+.alertbox-title>i {
+  color: hsl(205, 10%, 66%);
+  margin-right: .5rem;
+}
+
+.alertbox-title, .alertbox-content {
+  padding: 1rem;
+}
+
+.alertbox-button {
+  padding: 0 1rem 1rem 1rem;
+}
+
+.alertbox-close {
+  text-align: center;
+  display: block;
+  border: 1px solid hsl(205, 10%, 92%);
+  padding: .5rem .75rem;
+  color: hsl(205, 10%, 66%);
+  border-radius: 4px;
+  transition: all 0.2s ease-in;
+}
+
+.alertbox-close:hover {
+  background: hsl(205, 10%, 96%);
+}
+
+.waitinglist {
+  margin-left: .5rem;
+  color: hsl(0, 40%, 45%);
+}
+
+ul li {
+  line-height: 1.5;
+}
+
+.copyright {
+  padding: 1rem;
+  background: hsl(205, 10%, 94%);
+  color: hsl(205, 10%, 64%);
+  font-size: 12px;
+}
+.copyright a {
+  color: hsl(205, 10%, 34%);
+}
+.lincese {
+  color: hsl(205, 10%, 74%);
+  text-align: justify;
+}
+.lincese h2 {
+  color: hsl(205, 10%, 64%);
+}
+.lincese h3 {
+  margin: .5rem 0;
+}
+.lincese > div {
+  margin: .5rem 0;
+  line-height: 1.5;
+  border-left: 1px solid hsl(205, 10%, 94%);
+  padding-left: .5rem;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+.lincese > div:hover {
+  color: hsl(205, 10%, 54%);
+}
+.lincese > hr {
+  height: .5rem;
+  border: none;
+  margin: 1rem;
+}
+
+/* Halt Message */
+
+#halt-block:nth-last-child(n+1) {
+  border-bottom: 1px solid hsl(205, 10%, 93%);
+}
+
+#halt-block>div {
+  margin: 1rem;
+}
+
+#return-block>div {
+  margin: 1rem;
+}
+
+#return-block a {
+  color: hsl(205, 50%, 40%);
+}
