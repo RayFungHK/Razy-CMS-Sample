@@ -1127,3 +1127,64 @@ ul li {
 #return-block a {
   color: hsl(205, 50%, 40%);
 }
+
+
+@media only screen and (max-width: 768px) {
+  main {
+    margin-top: 50px;
+  }
+  main.flex, #main-body {
+    max-width: 100%;
+    width: 100%;
+  }
+  topbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  sidebar {
+    position: fixed;
+    left: -100%;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    transition: left .2s ease-in;
+    min-width: none;
+    max-width: none;
+    overflow: auto;
+  }
+  sidebar.opened {
+    left: 0;
+  }
+  #site-name {
+    position: absolute;
+    background: transparent;
+    left: 50px;
+    right: 50px;
+    width: auto;
+    text-align: center;
+  }
+  section>table.panel, section>table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    display: block;
+    width: 100%;
+    overflow: auto;
+  }
+  .navigator>div {
+    display: block;
+  }
+  .navigator .btn-group {
+    margin-top: 1rem;
+  }
+  div.form-group.flex {
+    display: block;
+  }
+  div.form-group.flex>label {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

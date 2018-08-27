@@ -5,9 +5,12 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1.0,user-scalable=yes,maximum-scale=1.0">
   <title>Razy CMS Sample</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="{$root_view_path}css/style.css">
   <link rel="stylesheet" href="{$root_view_path}css/flexit.css">
+  <link rel="stylesheet" href="{$root_view_path}css/style.css">
   <link rel="stylesheet" href="{$root_view_path}css/fontone.css">
+  <script type="text/javascript" src="{$root_view_path}/js/Void0.js"></script>
+  <script type="text/javascript" src="{$root_view_path}/js/common.js"></script>
+
 </head>
 <body>
   <div class="flex f-row">
@@ -25,7 +28,7 @@
         <div id="user-panel">
           <div id="avatar" class="flex f-center">
             <div>
-              <a href="{$url_base}/user/profile"><img src="http://www.zone4homes.com/themes/fo/img/avatar.png" /></a>
+              <img src="{$root_view_path}images/avatar.png" />
             </div>
           </div>
           <div id="user-name">{$display_name}</div>
@@ -40,5 +43,5 @@
           <!-- END BLOCK: category -->
         </div>
       </sidebar>
-      <div class="col flex f-fill f-row">
+      <div id="main-body" class="col flex f-fill f-row">
         <div class="col">
