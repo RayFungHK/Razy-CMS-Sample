@@ -100,9 +100,6 @@ namespace RazyFramework
   			} elseif ($postData('password')->length() < 6) {
   				$errors['password'] = 'The password lenght must greater than 6 characters.';
   			} elseif ($postData['password'] !== $postData['retype_password']) {
-  				var_dump($postData['password'] === $postData['retype_password']);
-  				echo $postData['password'];
-  				echo $postData['retype_password'];
   				$errors['password'] = 'The password was not match the retype password.';
   			}
   			$postData['password'] = md5($postData['password']);
@@ -156,7 +153,7 @@ namespace RazyFramework
   	// Anonymous or ghost group has no permission, group_id assigned to 0
   	$userdata['group_id'] = -1;
   	$groupList            = [];
-  	if (-1 === $this->userdata['group_id']) {
+  	if (-1 == $this->userdata['group_id']) {
   		$groupList['-1'] = 'System Admin';
   	}
   	$groupList['0'] = 'Not Assigned';

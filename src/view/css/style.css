@@ -1154,6 +1154,7 @@ ul li {
     min-width: none;
     max-width: none;
     overflow: auto;
+    z-index: 10;
   }
   sidebar.opened {
     left: 0;
