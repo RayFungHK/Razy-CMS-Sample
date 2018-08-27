@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="{$root_view_path}css/style.css">
   <link rel="stylesheet" href="{$root_view_path}css/flexit.css">
   <link rel="stylesheet" href="{$root_view_path}css/fontone.css">
-  <script type="text/javascript" src="{$root_view_path}js/Void0.js"></script>
 </head>
 <body>
   <div class="flex f-row">
@@ -16,7 +15,7 @@
       <div class="flex f-fill">
         <div id="site-name"><a href="{$url_base}">Razy CMS Sample</a></div>
         <div id="navigator" class="col flex f-fill f-between">
-          <div id="menu-icon"><a href="javascript:void(0)"></a></div>
+          <div id="menu-icon"><a id="menu" href="javascript:void(0)"></a></div>
           <div id="logout-icon"><a href="{$url_base}/user/session?signout" class="fo-power"></a></div>
         </div>
       </div>

@@ -41,6 +41,19 @@
 </section>
 
 <section class="gutters">
+  <div class="panel">
+    <div class="panel-title">How to install?</div>
+    <div class="gutters">
+      <ul>
+        <li>Fork or clone the Razy Framework from <a href="https://github.com/RayFungHK/Razy" target="_blank">Razy Framework</a>.</li>
+        <li>Download <a href="https://github.com/RayFungHK/Razy-CMS-Sample" target="_blank">Razy-CMS-Sample</a> and copy to Razy Framework root folder.</li>
+        <li>Visit the system via browser and start Installation.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="gutters">
   <div class="lincese">
     <h2>License</h2>
     <h3>Source Code</h3>
