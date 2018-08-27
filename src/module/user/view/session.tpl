@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1.0,user-scalable=yes,maximum-scale=1.0">
 <meta name="format-detection" content="telephone=no">
 <title>Razy CMS Sample - Login</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="{$root_view_path}css/flexit.css">
 <link rel="stylesheet" type="text/css" href="{$root_view_path}css/fontone.css">
 <link rel="stylesheet" type="text/css" href="{$root_view_path}css/login.css">
