@@ -7,7 +7,7 @@
     </div>
     <div>
       <div class="flex f-fill btn-group">
-        <a href="{$module_root}create"><span class="fo-plus"></span>New User</a>
+        <a href="{$module_root_url}create"><span class="fo-plus"></span>New User</a>
       </div>
     </div>
   </div>

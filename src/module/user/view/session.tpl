@@ -6,9 +6,9 @@
 <meta name="format-detection" content="telephone=no">
 <title>Razy CMS Sample - Login</title>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="{$root_view_path}css/flexit.css">
-<link rel="stylesheet" type="text/css" href="{$root_view_path}css/fontone.css">
-<link rel="stylesheet" type="text/css" href="{$root_view_path}css/login.css">
+<link rel="stylesheet" type="text/css" href="{$shared_view_url}css/flexit.css">
+<link rel="stylesheet" type="text/css" href="{$shared_view_url}css/fontone.css">
+<link rel="stylesheet" type="text/css" href="{$shared_view_url}css/login.css">
 </head>
 
 <body>

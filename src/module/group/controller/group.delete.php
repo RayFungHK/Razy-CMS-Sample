@@ -35,8 +35,8 @@ namespace RazyFramework
   	]);
   	if (!$groupResult) {
   		$this->manager->execute('core.halt', 'Group Not Found', 'Group was not found in database or it has been removed.', [
-  			URL_BASE                                 => 'Back to Dashboard',
-  			URL_BASE . $this->module->getRemapPath() => 'Back to Group Management',
+  			CORE_BASE_URL                                 => 'Back to Dashboard',
+  			$this->module->getModuleRootURL() => 'Back to Group Management',
   		]);
 
   		return true;
@@ -56,8 +56,8 @@ namespace RazyFramework
       ]);
 
   		$this->manager->execute('core.halt', 'System Message', 'Group remove successfully', [
-  			URL_BASE                                 => 'Back to Dashboard',
-  			URL_BASE . $this->module->getRemapPath() => 'Back to Group Management',
+  			CORE_BASE_URL                                 => 'Back to Dashboard',
+  			$this->module->getModuleRootURL() => 'Back to Group Management',
   		]);
 
   		return true;
@@ -67,8 +67,8 @@ namespace RazyFramework
   		'title'        => 'Confirm delete this group',
   		'message'      => 'Are you sure to delete this group?',
   		'confirm_text' => 'Sure, Delete it.',
-  		'confirm_url'  => URL_BASE . $this->module->getRemapPath() . 'delete/' . $group_id . '/confirm',
-  		'cancel_url'   => URL_BASE . $this->module->getRemapPath(),
+  		'confirm_url'  => $this->module->getModuleRootURL() . 'delete/' . $group_id . '/confirm',
+  		'cancel_url'   => $this->module->getModuleRootURL(),
   	]);
 
   	$this->manager->execute('core.loadFooter');

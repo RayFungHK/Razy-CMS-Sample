@@ -41,8 +41,8 @@ namespace RazyFramework
   		]);
   		if (!$groupResult) {
   			$this->manager->execute('core.halt', 'Group Not Found', 'Group was not found in database or it has been removed.', [
-  				URL_BASE                                 => 'Back to Dashboard',
-  				URL_BASE . $this->module->getRemapPath() => 'Back to Group Management',
+  				CORE_BASE_URL                                 => 'Back to Dashboard',
+  				$this->module->getModuleRootURL() => 'Back to Group Management',
   			]);
 
   			return true;
@@ -51,7 +51,7 @@ namespace RazyFramework
   		$prevented   = $groupResult->getArrayCopy();
   	}
 
-  	$formTarget = URL_BASE . $this->module->getRemapPath() . $route . (('edit' === $route) ? '/' . $group_id : '');
+  	$formTarget = $this->module->getModuleRootURL() . $route . (('edit' === $route) ? '/' . $group_id : '');
 
   	if (count($_POST)) {
   		$errors   = [];
@@ -83,8 +83,8 @@ namespace RazyFramework
   			}
 
   			$this->manager->execute('core.halt', 'System Message', ('edit' === $route) ? 'Group update successfully' : 'Group create successfully', [
-  				URL_BASE                                 => 'Back to Dashboard',
-  				URL_BASE . $this->module->getRemapPath() => 'Back to Group Management',
+  				CORE_BASE_URL                                 => 'Back to Dashboard',
+  				$this->module->getModuleRootURL() => 'Back to Group Management',
   			]);
 
   			return true;

@@ -34,7 +34,7 @@ namespace RazyFramework
   			// If install.php config file does not exist, redirect to installation page
   			if (!$config->isLoaded()) {
   				if ('install' !== $route) {
-  					$this->manager->locate($this->module->getRemapPath() . 'install');
+  					$this->manager->locate($this->module->getModuleRootURL() . 'install');
   				} else {
   					// The request url has routed to installation page
   					// Declare a constant to determine current is the installation stage
@@ -54,7 +54,7 @@ namespace RazyFramework
   				return '';
   			}
 
-  			$tplManager = new TemplateManager(VIEW_PATH . '/pagination.tpl');
+  			$tplManager = new TemplateManager(SHARED_VIEW_PATH . '/pagination.tpl');
   			$root = $tplManager->getRootBlock();
 
   			$prev_url  = '';
@@ -132,7 +132,7 @@ namespace RazyFramework
       			]);
     				$category->newBlock('menu', $module->getCode())->assign([
     					'name' => $menuName,
-    					'path' => URL_BASE . $module->getRemapPath(),
+    					'path' => $module->getModuleRootURL(),
     				]);
           }
   			}

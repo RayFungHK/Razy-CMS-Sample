@@ -37,8 +37,8 @@ namespace RazyFramework
   	]);
   	if (!$userResult) {
   		$this->manager->execute('core.halt', 'User Not Found', 'User was not found in database or it has been removed.', [
-  			URL_BASE                                 => 'Back to Dashboard',
-  			URL_BASE . $this->module->getRemapPath() => 'Back to User Management',
+  			CORE_BASE_URL                                 => 'Back to Dashboard',
+  			$this->module->getModuleRootURL() => 'Back to User Management',
   		]);
 
   		return true;
@@ -52,8 +52,8 @@ namespace RazyFramework
   	]);
   	if (!$countResult['total']) {
   		$this->manager->execute('core.halt', 'System Message', 'Your system should have at least Super Admin.', [
-  			URL_BASE                                 => 'Back to Dashboard',
-  			URL_BASE . $this->module->getRemapPath() => 'Back to User Management',
+  			CORE_BASE_URL                                 => 'Back to Dashboard',
+  			$this->module->getModuleRootURL() => 'Back to User Management',
   		]);
 
   		return true;
@@ -66,8 +66,8 @@ namespace RazyFramework
   		]);
 
   		$this->manager->execute('core.halt', 'System Message', 'User remove successfully', [
-  			URL_BASE                                 => 'Back to Dashboard',
-  			URL_BASE . $this->module->getRemapPath() => 'Back to User Management',
+  			CORE_BASE_URL                                 => 'Back to Dashboard',
+  			$this->module->getModuleRootURL() => 'Back to User Management',
   		]);
 
   		return true;
@@ -77,8 +77,8 @@ namespace RazyFramework
   		'title'        => 'Confirm delete this user',
   		'message'      => 'Are you sure to delete this user?',
   		'confirm_text' => 'Sure, Delete it.',
-  		'confirm_url'  => URL_BASE . $this->module->getRemapPath() . 'delete/' . $user_id . '/confirm',
-  		'cancel_url'   => URL_BASE . $this->module->getRemapPath(),
+  		'confirm_url'  => $this->module->getModuleRootURL() . 'delete/' . $user_id . '/confirm',
+  		'cancel_url'   => $this->module->getModuleRootURL(),
   	]);
 
   	$this->manager->execute('core.loadFooter');

@@ -35,8 +35,8 @@ namespace RazyFramework
   	]);
   	if (!$articleResult) {
   		$this->manager->execute('core.halt', 'Article Not Found', 'Article was not found in database or it has been removed.', [
-  			URL_BASE                                 => 'Back to Dashboard',
-  			URL_BASE . $this->module->getRemapPath() => 'Back to Article Management',
+  			CORE_BASE_URL                                 => 'Back to Dashboard',
+  			$this->module->getModuleRootURL() => 'Back to Article Management',
   		]);
 
   		return true;
@@ -51,8 +51,8 @@ namespace RazyFramework
   		]);
 
   		$this->manager->execute('core.halt', 'System Message', 'Article remove successfully', [
-  			URL_BASE                                 => 'Back to Dashboard',
-  			URL_BASE . $this->module->getRemapPath() => 'Back to Article Management',
+  			CORE_BASE_URL                                 => 'Back to Dashboard',
+  			$this->module->getModuleRootURL() => 'Back to Article Management',
   		]);
 
   		return true;
@@ -62,8 +62,8 @@ namespace RazyFramework
   		'title'        => 'Confirm delete this article',
   		'message'      => 'Are you sure to delete this article?',
   		'confirm_text' => 'Sure, Delete it.',
-  		'confirm_url'  => URL_BASE . $this->module->getRemapPath() . 'delete/' . $article_id . '/confirm',
-  		'cancel_url'   => URL_BASE . $this->module->getRemapPath(),
+  		'confirm_url'  => $this->module->getModuleRootURL() . 'delete/' . $article_id . '/confirm',
+  		'cancel_url'   => $this->module->getModuleRootURL(),
   	]);
 
   	$this->manager->execute('core.loadFooter');

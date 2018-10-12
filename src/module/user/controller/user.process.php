@@ -43,8 +43,8 @@ namespace RazyFramework
   		]);
   		if (!$userResult) {
   			$this->manager->execute('core.halt', 'User Not Found', 'User was not found in database or it has been removed.', [
-  				URL_BASE                                 => 'Back to Dashboard',
-  				URL_BASE . $this->module->getRemapPath() => 'Back to User Management',
+  				CORE_BASE_URL                                 => 'Back to Dashboard',
+  				$this->module->getModuleRootURL() => 'Back to User Management',
   			]);
 
   			return true;
@@ -53,7 +53,7 @@ namespace RazyFramework
   		$prevented  = $userResult->getArrayCopy();
   	}
 
-  	$formTarget = URL_BASE . $this->module->getRemapPath() . $route . (('edit' === $route) ? '/' . $user_id : '');
+  	$formTarget = $this->module->getModuleRootURL() . $route . (('edit' === $route) ? '/' . $user_id : '');
 
   	if (count($_POST)) {
   		$errors   = [];
@@ -140,8 +140,8 @@ namespace RazyFramework
   			}
 
   			$this->manager->execute('core.halt', 'System Message', ('edit' === $route) ? 'User update successfully' : 'User create successfully', [
-					URL_BASE                                 => 'Back to Dashboard',
-					URL_BASE . $this->module->getRemapPath() => 'Back to User Management',
+					CORE_BASE_URL                                 => 'Back to Dashboard',
+					$this->module->getModuleRootURL() => 'Back to User Management',
 				]);
 
   			return true;

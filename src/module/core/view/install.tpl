@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="{$root_view_path}css/flexit.css" />
-  <link rel="stylesheet" type="text/css" href="{$root_view_path}css/install.css" />
-  <link rel="stylesheet" type="text/css" href="{$root_view_path}css/fontone.css" />
-  <script type="text/javascript" src="{$root_view_path}js/Void0.js"></script>
+  <link rel="stylesheet" type="text/css" href="{$shared_view_url}css/flexit.css" />
+  <link rel="stylesheet" type="text/css" href="{$shared_view_url}css/install.css" />
+  <link rel="stylesheet" type="text/css" href="{$shared_view_url}css/fontone.css" />
+  <script type="text/javascript" src="{$shared_view_url}js/Void0.js"></script>
   <title>Setup database connection</title>
 </head>
 <body>
@@ -23,7 +23,7 @@
       <div class="success">
         <div><i class="fo-tick"></i></div>
         Configuration Completed
-        <div><a href="{$url_base}" class="conitune">Contiune</a></div>
+        <div><a href="{$system_root_url}" class="conitune">Contiune</a></div>
       </div>
       <!-- END BLOCK: success -->
       <!-- START BLOCK: setting -->

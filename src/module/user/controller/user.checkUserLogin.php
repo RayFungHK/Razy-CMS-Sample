@@ -14,7 +14,7 @@ namespace RazyFramework
   return function () {
     $route = $this->module->getRouteName();
     if (!USER_LOGIN && $route != 'session') {
-      header('Location: ' . URL_BASE . $this->module->getRemapPath() . 'session');
+      header('Location: ' . $this->module->getModuleRootURL() . 'session');
     }
   };
 }

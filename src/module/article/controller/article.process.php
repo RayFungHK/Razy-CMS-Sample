@@ -41,8 +41,8 @@ namespace RazyFramework
   		]);
   		if (!$articleResult) {
   			$this->manager->execute('core.halt', 'Article Not Found', 'Article was not found in database or it has been removed.', [
-  				URL_BASE                                 => 'Back to Dashboard',
-  				URL_BASE . $this->module->getRemapPath() => 'Back to Article Management',
+  				CORE_BASE_URL                                 => 'Back to Dashboard',
+  				$this->module->getModuleRootURL() => 'Back to Article Management',
   			]);
 
   			return true;
@@ -51,7 +51,7 @@ namespace RazyFramework
   		$prevented     = $articleResult->getArrayCopy();
   	}
 
-  	$formTarget = URL_BASE . $this->module->getRemapPath() . $route . (('edit' === $route) ? '/' . $article_id : '');
+  	$formTarget = $this->module->getModuleRootURL() . $route . (('edit' === $route) ? '/' . $article_id : '');
 
   	if (count($_POST)) {
   		$errors   = [];
@@ -92,8 +92,8 @@ namespace RazyFramework
   			}
 
   			$this->manager->execute('core.halt', 'System Message', ('edit' === $route) ? 'Article update successfully' : 'Article create successfully', [
-  				URL_BASE                                 => 'Back to Dashboard',
-  				URL_BASE . $this->module->getRemapPath() => 'Back to Article Management',
+  				CORE_BASE_URL                                 => 'Back to Dashboard',
+  				$this->module->getModuleRootURL() => 'Back to Article Management',
   			]);
 
   			return true;

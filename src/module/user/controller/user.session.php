@@ -54,7 +54,7 @@ namespace RazyFramework
   						$_SESSION['login'] = $login_data;
   					}
 
-  					header('location: ' . (($redirect) ? $redirect : URL_BASE));
+  					header('location: ' . (($redirect) ? $redirect : SYSTEM_ROOT_URL));
   				} else {
   					$error_message = 'Invalid Username or Password';
   				}
@@ -69,7 +69,7 @@ namespace RazyFramework
   	}
 
   	$root->assign([
-  		'form_target'  => URL_BASE . $this->module->getRemapPath() . 'session',
+  		'form_target'  => $this->module->getModuleRootURL() . 'session',
   		'val_username' => $login_name,
   	]);
 

@@ -7,7 +7,7 @@
     </div>
     <div>
       <div class="flex f-fill btn-group">
-        <a href="{$module_root}create"><span class="fo-plus"></span>New Group</a>
+        <a href="{$module_root_url}create"><span class="fo-plus"></span>New Group</a>
       </div>
     </div>
   </div>
@@ -31,8 +31,8 @@
       <td>{$name}</td>
       <td>
         <div class="flex f-fill f-nowrap btn-group thin">
-          <a href="{$module_root}edit/{$group_id}"><span class="fo-pencil"></span>Edit</a>
-          <a href="{$module_root}delete/{$group_id}"><span class="fo-cross"></span>Delete</a>
+          <a href="{$module_root_url}edit/{$group_id}"><span class="fo-pencil"></span>Edit</a>
+          <a href="{$module_root_url}delete/{$group_id}"><span class="fo-cross"></span>Delete</a>
         </div>
       </td>
     </tr>
